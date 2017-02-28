@@ -20,16 +20,27 @@ pairs(~ crim + indus + rm, Boston)
 plot(Boston$crim)
 plot(Boston$tax)
 plot(Boston$ptratio)
-#
+#Neighborhoods 350-500 have high crime rates. Most have a crime rate near zero but one goes as high as around 90. 
+#Tax rates have more fluctuation, but highest tax rates are present in neighborhoods 350-500. The highest rates, at about 700, is in neighborhood 480. The lowest rates are below 200. 
+#Most neighborhoods in Boston have a pupil teacher ratio between 14 and 21. All of the suburbs in 350-500 have a ratio of 20. The highest ratio is 22 and the lowest is around 12. 
+
+#e) How many of the suburbs in this data set bound the Charles river?
 plot(Boston$chas)
 hist(Boston$chas)
 summary(Boston$chas)
 summary(Boston$chas==1)
+# Thirty-five (35) suburbs in the dataset bound the Charles River.
+
+#f) What is the median pupil-teacher ratio among the towns in this data set?
 summary(Boston$ptratio)
+#The median pupil-teacher ratio is 19.05.
+
+#g) Which suburb of Boston has lowest median value of owneroccupied homes? What are the values of the other predictors for that suburb, and how do those values compare to the overall ranges for those predictors? Comment on your findings.
 which.min(Boston$age)
 which.min(Boston$medv)
 hist(Boston$indus)
 plot(Boston$indus)
+#
 summary(Boston)
 which.max(Boston$rm)
 summary(Boston$rm>7)
