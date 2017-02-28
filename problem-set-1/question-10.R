@@ -40,8 +40,14 @@ which.min(Boston$age)
 which.min(Boston$medv)
 hist(Boston$indus)
 plot(Boston$indus)
-#
+# The neighborhood 399 has the lowest median value of owner-occupied homes at 5.0.
+#The values of the predictors are crim = 38.35, indus = 18.10, zn = 0, chas = 0, nox = 0.69, rm = 5.45, age = 100, dis = 1.48, rad = 24, tax = 666, ptratio = 20.2, black = 396.9, lstat = 30.59. 
+#I compared these numbers to the mean. The crime rate is extremely high compared to the mean (3.61). The zn, indus, and nox are also slightly higher than average. The number of rooms per dwelling is slightly lower than the mean (6.78). 
+#This neighborhood has greater access to employment centers and highways; however, tax rates and student teacher ratios are higher than average. The proportion of African Americans is slightly higher than the mean (356.67). I assume this is a neighborhood closer to the city of Boston.
+
+#h) In this data set, how many of the suburbs average more than seven rooms per dwelling? More than eight rooms per dwelling? Comment on the suburbs that average more than eight rooms per dwelling.
 summary(Boston)
 which.max(Boston$rm)
 summary(Boston$rm>7)
 summary(Boston$rm>8)
+#Sixty-four (64) suburbs average more than seven rooms per dwelling while only thirteen suburbs average more than eight rooms per dwelling. The suburb with the greatest rooms is 365 with 8.780. Most of the other rates are also higher than average, except for crime and number of African Americans, which are par with the average. 
