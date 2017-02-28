@@ -14,9 +14,13 @@ pairs(~ crim + indus + rm, Boston)
 #There seems to be a negligible relationship between rooms and non-retail business.
 
 #c) Are any of the predictors associated with per capita crime rate? If so, explain the relationship.
+#Yes, crim. There is higher crime rate in neighborhoods indexed between ≈ 350-500. There is also a slight spike around 150. Most of the other neighborhoods have crime near zero.
+
+#d) Do any of the suburbs of Boston appear to have particularly high crime rates? Tax rates? Pupil-teacher ratios? Comment on the range of each predictor.
 plot(Boston$crim)
 plot(Boston$tax)
 plot(Boston$ptratio)
+#
 plot(Boston$chas)
 hist(Boston$chas)
 summary(Boston$chas)
